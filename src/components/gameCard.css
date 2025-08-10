@@ -1,0 +1,126 @@
+.gameCard {
+
+    position: relative;
+    padding: 25px 20px;
+    margin-top: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    box-shadow: -5px -5px 15px rgba(255, 255, 255, 0.1),
+        5px 5px 15px rgba(0, 0, 0, 0.35);
+    background-color: var(--bgColor);
+    transition: transform 0.3s;
+}
+
+.gameCard:hover {
+    transform: translateY(-10px);
+}
+
+.gameCard img {
+    border-radius: 20px;
+    margin-bottom: 15px;
+    object-fit: cover;
+    object-position: center;
+    height: 50%;
+    width: 100%;
+}
+
+.gameCard .like {
+    position: absolute;
+    top: 10px;
+    right: 13px;
+    width: 40px;
+    height: 40px;
+    background: var(--bgColor);
+    padding: 5px;
+    border-radius: 0 0 0 20px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.gameCard .like.active {
+    color: var(--second);
+}
+
+.gameCard span {
+    color: #fff;
+}
+
+.gameCard .gameFeature {
+    display: flex;
+    justify-content: space-between;
+}
+
+.gameCard .gameType {
+    background: var(--second);
+    /* padding: 5px 10px; */
+    border-radius: 10px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: #fff;
+}
+
+.gameCard .gameTitle {
+
+    font-family: 'Bauhaus Modern', sans-serif;
+    text-transform: uppercase;
+    font-size: 17px;
+    color: #fff;
+}
+
+.gameCard .gamePrice {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 0px;
+}
+
+.gameCard .discount {
+    background: #ff0000;
+    padding: 2px 5px;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    font-weight: 800;
+    color: #fff;
+}
+
+.gameCard .prevPrice {
+    text-decoration: line-through;
+    text-decoration-color: #ff0000;
+    text-decoration-thickness: 3px;
+    font-size: 0.8rem;
+    color: #ff0000;
+}
+
+.gameCard .currentPrice {
+
+    font-size: 1.3rem;
+    font-weight: 800;
+
+}
+
+.gameCard .addBag {
+    position: absolute;
+    right: 0;
+    bottom: -4px;
+    color: #fff;
+    background: var(--second);
+    padding: 10px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px 0 20px 0;
+    font-size: 1.2rem;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.gameCard .addBag:hover {
+    background: var(--primary);
+}

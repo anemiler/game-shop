@@ -1,0 +1,21 @@
+section.home .sectionTitle {
+   color: #fff;
+   padding: 15px;
+}
+
+.viewMore {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2rem;
+    transition: 0.3s;
+}
+
+.viewMore:hover {
+    color: var(--second);
+}
+.row-home{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+}
